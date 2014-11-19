@@ -25,7 +25,7 @@ module WashOut
 
         end
 
-        default_response_tag = soap_config.camelize_wsdl ? 'Response' : '_response'
+        default_response_tag = 'Response'
         default_response_tag = action+default_response_tag
 
         self.soap_actions[action] = options.merge(
